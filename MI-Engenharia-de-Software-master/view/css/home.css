@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+.texto-home{
+    font-style: italic;
+}
+
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    cursor: default;
+    height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+}
+

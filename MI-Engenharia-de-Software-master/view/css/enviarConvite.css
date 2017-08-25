@@ -1,0 +1,32 @@
+
+.imgfb img{
+    position: absolute;
+    width:10%;
+    height:15%;
+    left: 101%;
+    top: 16%;
+}
+
+.imggplus img{
+    position: absolute;
+    width:10%;
+    height:18%;
+    left: 101%;
+    top: 16%;
+}
+
+.tabela{
+    position: relative;
+    margin-left: 5%;
+
+}
+
+.tabela table{
+    width: 100%;
+}
+
+.enviar{
+    position: absolute;
+    left: 65%;
+    top: 66%;
+}

@@ -1,0 +1,144 @@
+body {
+			padding:0px;
+			margin:0px;
+		}
+
+		#menu ul {
+			padding:0px;
+			margin:0px;
+			float: left;
+			width: 50%;
+			background-color:#EDEDED;
+			list-style:none;
+			font:80% Tahoma;
+		}
+
+		#menu ul li { display: inline; }
+
+		#menu ul li a {
+			background-color:#EDEDED;
+			color: #333;
+			text-decoration: none;
+			border-bottom:3px solid #EDEDED;
+			padding: 2px 10px;
+			float:left;
+		}
+
+		#menu ul li a:hover {
+			background-color:#D6D6D6;
+			color: #6D6D6D;
+			border-bottom:3px solid #00BFFF;
+		}
+		#centro {
+			width:400px;
+			height:100px;
+			position:absolute;
+			top:10%;
+			left:45%;
+			margin-top:-10px;
+			margin-left:-50px;
+}
+
+
+
+      #divBusca{
+    background-color:#E0EEEE;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+    position:absolute;
+	top:30%;
+	left:50%;
+	margin-top:-10px;
+	margin-left:-50px;
+}
+ 
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;   
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+}
+ 
+#btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:75px;
+    font-weight:bold;
+    background:#5F9EA0;
+
+}
+ 
+#divBusca img{
+    float:left;
+}
+
+
+
+#navegacaoIni{
+    position: absolute;
+ 	  height: 333px; 
+ 	   width: 750px;
+       float: left;
+        top:40%;
+	    left:40%;
+	   margin-top:-10px;
+	   margin-left:-50px;
+		margin-top:-10px;
+		overflow: hidden;
+
+}
+
+#navegacaoIni ul li{
+  display: inline-block;
+
+
+
+}
+
+
+nav { 
+	margin-op:60px; 
+	left:0; 
+	right:0; 
+	z-index: 20;
+	 background: #fff;
+	  position: absolute;
+
+
+	   } 
+ 	nav a {
+ 	 background:#339999;
+ 	 padding: 3px 10px; 
+ 	 border-radius: 3px; 
+ 	 color:#FFF; 
+ 	 font-weight: bold; 
+ 	 text-decoration: none;
+ 	  } 
+ 	  nav a:hover{
+ 	   background: #339999;
+ 	    }   
+ 	    
+
+ 	     .target { 
+ 	          	position: absolute;
+ 	          	 top: 160px;
+ 	          	  right:500px; 
+ 	          	  height: 333px;
+ 	          	   width: 500px; 
+ 	          	   overflow: hidden; 
+ 	          	   align-content: center;
+ 	          	   
+ 	          	} 
+ 	          	  
+
+ 	          	   .target:target {
+ 	          	    left:-100px;
+
+ 	          	     }
