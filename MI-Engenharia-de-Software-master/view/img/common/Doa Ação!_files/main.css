@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+
+.texto-logo {
+    font-family: 'Comfortaa', cursive;;
+}
+
+.botao-buscar-inicial {
+    background-color: #005388 !important;
+}
+
+.texto-head {
+    font-family:'Comfortaa', cursive;
+;
+    text-transform: none !important;
+}
+
+.rodape {
+    background-color: #36648B
+    !important;
+}
