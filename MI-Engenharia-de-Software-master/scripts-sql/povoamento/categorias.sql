@@ -1,0 +1,12 @@
+INSERT INTO categoria (nome, imagem) VALUES ('Animais', 'aaa.jpg');
+INSERT INTO categoria (nome, imagem) VALUES ('Mobília', 'mmm.jpg');
+INSERT INTO categoria (nome, imagem) VALUES ('Alimentos', 'cc.jpg');
+INSERT INTO categoria (nome, imagem) VALUES ('Escola', 'cachorro.jpg');
+INSERT INTO categoria (nome, imagem) VALUES ('Roupas', 'moveis.jpg');
+INSERT INTO categoria (nome, imagem) VALUES ('Saúde', 'utensilios.jpg');
+INSERT INTO categoria (nome, imagem) VALUES ('Brinquedos', 'banner.jpg');
+INSERT INTO categoria (nome, imagem) VALUES ('Bebês', 'coracao.jpg');
+INSERT INTO categoria (nome, imagem) VALUES ('Infantil', 'coracao.jpg');
+INSERT INTO categoria (nome, imagem) VALUES ('Educação', 'coracao.jpg');
+INSERT INTO categoria (nome, imagem) VALUES ('Financeira', 'coracao.jpg');
+INSERT INTO categoria (nome, imagem) VALUES ('Tempo', 'coracao.jpg');

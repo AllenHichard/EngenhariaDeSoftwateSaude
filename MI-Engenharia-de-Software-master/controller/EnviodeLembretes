@@ -1,0 +1,101 @@
+<?php
+require_once '../util/bd/DoacaoDAL.php';
+require_once '../util/bd/UsuarioDAL.php';
+require_once '../util/bd/CampanhaDAL.php';
+
+
+date_default_timezone_set('America/Sao_Paulo');
+$date = date('d-m-Y');
+$dal = new DoacaoDAL();
+$dalUsuario = new UsuarioDAL();
+$dalCampanha = new CampanhaDAL();
+
+
+
+$resultado = $dal->getDoacoes();
+$doacoes = array();
+while ($row = $resultado->fetch_array()) {
+    $doacoes[$row['idCampanha']] = array($row['idDoador'],$row['confirmada'],$row['data']);
+    $partes = explode('/', $doacoes['data']);
+    $dataFinal = mktime(0, 0, 0, $partes[1], $partes[0], $partes[2]);
+
+    $partes = explode('/', $date);
+    $dataHoje = mktime(0, 0, 0, $partes[1], $partes[0], $partes[2]);
+    $diferenca = $dataFinal - $dataHoje;
+    $dias = (int)floor( $diferenca / (60 * 60 * 24));
+    $nomeCampanha = $dalCampanha->getNomeCampanha();
+
+    if($doacoes['confirmada'] == false && $dias <= 2){
+
+      $email =  $dalUsuario ->getUsuarioContato($doacoes['idDoador']);
+
+        $emailenviar = "doacaominerva@gmail.com";
+        $destino = $email;
+        $assunto = "Doação Pendente";
+
+        // É necessário indicar que o formato do e-mail é html
+        $headers  = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $headers .= 'From: $nome <$email>';
+        //$headers .= "Bcc: $EmailPadrao\r\n";
+
+        $enviaremail = mail($destino, $assunto, $corpoEmail, $headers);
+        if($enviaremail){
+            $mgm = "E-MAIL ENVIADO COM SUCESSO! <br> O link será enviado para o e-mail fornecido no formulário";
+            echo " <meta http-equiv='refresh' content='10;URL=contato.php'>";
+        } else {
+            $mgm = "ERRO AO ENVIAR E-MAIL!";
+            echo "";
+        }
+
+
+
+
+
+
+
+    }
+
+}
+
+
+
+$corpoEmail = "
+    <style type='text/css'>
+    body {
+    margin:0px;
+    font-family:Verdane;
+    font-size:12px;
+    color: #666666;
+    }
+    a{
+    color: #666666;
+    text-decoration: none;
+    }
+    a:hover {
+    color: #FF0000;
+    text-decoration: none;
+    }
+    </style>
+    <html>
+        <table width='510' border='1' cellpadding='1' cellspacing='1' bgcolor='#CCCCCC'>
+            <tr>
+              <td>
+    <tr>
+                 <td width='500'> Olá $nome  </td>
+                 <h1> Detectamos que a sua doação para a campanha : $nomeCampanha</h1>
+                 <h1> Ainda não foi confirmada, a campanha terminará no dia : $dataFinal</h1>
+                 <h1> Dirija-se até um ponto de coleta para realizar a doação, pode conferir os pontos no link abaixo,
+                  ou pode cancelar a sua doação : </h1>
+                 <h3> Att Equipe DoaAção</h3>
+
+
+                 
+          </tr>
+        </table>
+    </html>
+    ";
+
+
+
+?>
