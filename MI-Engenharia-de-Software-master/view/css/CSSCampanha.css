@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+div#formulario {
+
+}
+
+
+div#formulario input {
+    width: 30%;
+    height: 20%;
+
+}
+
+textarea {
+    width: 30%;
+    height: 20%;
+
+}
+
+div#formulario label {
+    width: 20%;
+
+}

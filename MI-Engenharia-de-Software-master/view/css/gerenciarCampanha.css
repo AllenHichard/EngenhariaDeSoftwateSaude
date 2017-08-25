@@ -1,0 +1,53 @@
+.pure-form {
+    width: 50%;
+    margin-left: 5%;
+
+}
+
+.select, label{
+    text-align: left;
+
+}
+
+.button-sucess{
+
+}
+
+.tipolist{
+    position: relative;
+    width: 50%;
+    right: 2%;
+}
+
+
+
+.categorialist{
+    position: relative;
+    width: 50%;
+    right: 3%;
+}
+
+.secaobotoes {
+    position: absolute;
+    left: 67%;
+    top: 10%;
+}
+
+.secaobotoes fieldset{
+    text-align: left;
+
+}
+
+.secaobotoes a{
+    background: rgb(70,130,180);
+}
+
+
+.secaocheckbox{
+    width: 50%;
+    margin-left: 5%;
+}
+
+.botaosalvar{
+    margin-top: 5%;
+}

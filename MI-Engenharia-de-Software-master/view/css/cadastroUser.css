@@ -1,0 +1,36 @@
+
+.etapa1{
+    float: left;
+    width: 40%;
+}
+
+.etapa2{
+    position: absolute;
+    float: right;
+    width: 40%;
+    margin-left: 45%;
+    margin-top: -1%
+}
+.formulario{
+    margin-left: 10%;
+    margin-right: 10%;
+    top: 5%;
+}
+
+select{
+    margin-top: 7%;
+}
+.genero{
+    margin-top: 10%;
+}
+
+#termos{
+    margin-top: 5%;
+    width: 40%;
+}
+
+.opcoes{
+    width: 40%;
+    margin-left:56%;
+    margin-top: 36%;
+}

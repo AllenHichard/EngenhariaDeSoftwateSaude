@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+.texto-logo {
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.botao-buscar-inicial {
+    background-color: #005388 !important;
+}
+
+.texto-head {
+    font-family: 'Comfortaa', cursive;
+    text-transform: none !important;
+    font-size: 2em;
+
+    color: black !important;
+}
+
+.titulo-campanha {
+    margin: 0 !important;
+}
+
+.margem-1-2 {
+    margin: 0.5em !important;
+}
+
+.margem-top-1-2 {
+    margin-top: 0.5em;
+}
+
+.ui-autocomplete {
+    background-color: white !important;
+    list-style-type: none;
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+.buscar {
+    border: 5px solid #ddd !important;
+}
+.img-1-3 {
+    width: 30%;
+}
+
+.rodape {
+    background-color: #36648B !important;
+    position: relative;
+    width: 100%;
+    min-height: 12%;
+    z-index: 3;
+}
+
+div.fb-send iframe {
+    min-width: 59px !important;
+    min-height: 20px !important;
+}
+.wrapper-private {
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.imagem-home-campanha {
+    width: 10em;
+    height: 6em;
+}
+
+.logo-home {
+    margin: 0 !important;
+    float: left;
+}
+
+.contador {
+    font-size: 10em;
+}
+
+.conteudo {
+    min-height: 100% !important;
+
+}
+
+.titulo-publico {
+    margin-top: 2% !important;
+}
+
+.conteudo-pagina {
+    float: right;
+    width: 85% !important;
+    height: 100% !important;
+    min-width: 90%;
+    min-height: 100% !important;
+    padding-left: 6em;
+}
+
+.menu-lateral {
+    width: 15%;
+    background-color: whitesmoke;
+    position: fixed;
+}
+
+.submenu a {
+    color: #36648B !important;
+}
+
+.wrapper-home {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    margin-top: 2% !important;
+}
+
+.container-categorias {
+    border: 2px solid #ccc;
+    width: 90% !important;
+    height: 100px;
+    overflow-y: scroll;
+    margin: 0 !important;
+}
+
+.titulo-home {
+    margin: 0 !important;
+    float: right;
+    font-size: 3.5em;
+
+}
+
+.esquerda {
+    float: right;
+}
+
+.margem-formulario {
+    padding-left: 1em;
+}
+.input-radio{
+    vertical-align: middle;
+    text-align: left;
+}
+input[type="checkbox"] {
+}
+.checkbox {
+    margin: 30px 0 0 0;
+}
+
+.direita {
+    float: left;
+}
+
+.botoes {
+    clear: both;
+}
+
+@media only screen and (max-width: 500px) {
+    .titulo-home {
+        padding-top: 5%;
+        font-size: 3.5em;
+    }
+
+    .texto-head {
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .titulo-home {
+        padding-top: 10%;
+    }
+
+    .texto-head {
+        margin-top: 30%;
+    }
+}
